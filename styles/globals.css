@@ -1,0 +1,124 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #344097;
+  overflow-x: hidden;
+}
+
+.homeContainer {
+  padding: 0 7rem;
+  height: 100vh;
+}
+
+.contactDiv div{
+position: relative;
+}
+
+.contactBtn:hover ~ svg{
+display: none;
+}
+
+.contactBtn ~ svg{
+  position: absolute;
+  transition: 0.3s ease-in;
+z-index: -1;
+}
+.contactBtn {
+  outline: none;
+  border: none ;
+position: relative;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  color: #344097;
+  transition: 0.3s ease-out;
+}
+.contactBtn:hover {
+  border: 10px solid #344097;
+  background-color: #344097;
+  color: #fff;
+}
+
+.aboutUsContainer h2{
+  font-size: 43px;
+
+}
+.aboutUsContainer h2 .underlinePart{
+
+  position: relative;
+}
+.aboutUsContainer h2 .underlinePart::after{
+  content: '';
+  width: 100%;
+  height: 10%;
+  display: inline-block;
+  border: 2px solid #c1005a;
+  border-radius: 50%;
+  border-color: #c1005a transparent transparent;
+  position: absolute;
+  /* top: 2px; */
+  bottom: -8px;
+  left: 0;
+}
+.aboutUsContainer h2 .underlinePart +  span{
+  color: #7f829c;
+}
+/* .contactBtn::after {
+  content: '';
+  background-image: linear-gradient(to right, #ff00bb , #ff00bb , transparent , transparent , #4530FF , #4530FF , transparent , transparent );
+  background-position: top;
+  background-size: 10px 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-280deg);
+
+  width: 160%;
+  height: 130%;
+  display: inline-block;
+  position: absolute;
+} */
+
+.faqContainer h2{
+  font-size:5rem;
+  font-weight: 200;
+}
+
+
+.faqContainer .accordion-header button{
+  font-size: 41px;
+  font-weight: 200;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #344097;
+}
+.faqContainer .accordion-item {
+  border: none;
+  border-bottom: 0.1px solid #7f829c;
+  border-radius: 0;
+  padding: 2rem 0;
+}
+.faqContainer .accordion-item  .accordion-body{
+  font-size: 35px;
+  font-weight: 200;
+ color: #7f829c;
+  padding:  1rem;
+}
+
+.contactDiv h2{
+ font-size: 70px;
+ font-weight: 200;
+
+}
+.contactDiv h2 span{
+color: #7f829c;
+
+}

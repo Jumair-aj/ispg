@@ -1,0 +1,61 @@
+.videoSectionContainer {
+    height: 100vh;
+    padding: 4rem 0;
+
+}
+
+.videodiv {
+    position: relative;
+    height: 100%;
+}
+
+.videoSectionContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.playBtn {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
+    font-size: 27px;
+}
+
+.videoContainer {
+    z-index: 99;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #00000070;
+}
+
+
+.videoContainer div {
+content: '';
+    background-color: #00000070;
+    z-index: 199;
+    position: fixed;
+  
+}
+
+.videoContainer video {
+
+    height: 100%;
+    width: 100%;
+    z-index: 1991;
+    position: relative;
+}

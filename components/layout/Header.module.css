@@ -1,0 +1,44 @@
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    padding-block: 1.3rem;
+}
+.headerLink{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 3rem;
+}
+
+.headerLink ul{
+    list-style-type: none;
+    display: flex;
+    padding: 1rem;
+    margin: 0;
+}
+
+.headerLink li{
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    padding-left:4rem;
+}
+.headerLink li:first-child{
+    padding-left:0;
+    
+}
+.headerLink button{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #344097;
+    color: #fff;
+    padding-block: 0.8rem;
+    width: 8rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+.icon{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,130 @@
+.bannerContainer{
+    height: 800px;
+    padding: 5rem 0;
+}
+
+.tagline{
+    font-size: 13px;
+    margin-bottom: 4rem;
+}
+
+.projectsLink{
+
+    /* border-bottom: 1px dashed #344097; */
+    display: inline;
+    margin-bottom: 2rem;
+}
+
+.projectsLink::after{
+    content: '';
+    background-image: linear-gradient(to right, rgba(255, 255,255,0) 0%, #333 50%, rgba(255, 255, 255, 0) 0%);
+    background-size: 8px 0.8px;
+    background-repeat: repeat-x;
+    width: 8rem;
+    display: block;
+    height: 1px;
+    top: 3px;
+    position: relative;
+
+}
+
+.bannerContainer h1{    
+    font-size: 65px;
+    font-weight: 300;
+    margin-bottom: 6rem;
+}
+.bannerContainer span{    
+display: block;
+color: #7f829c;
+}
+
+.bannerImgContainer{
+    position: relative;
+    /* background: url('./../../public/images/bg.jpg');
+    background-position: 50px 50px;
+    background-size: cover; */
+}
+
+.bgImg{
+    position: absolute;
+    top: -600px;
+    right: -550px;
+    width: 1200px;
+    height: 1000px;
+    border-radius: 30%;
+    z-index: -1;
+    /* object-fit: cover; */
+    background-image: url("./../../public/images/bg.png");
+    background-repeat: repeat;
+}
+
+.picOneContainer, .picTwoContainer{
+    background-color: #fff;
+    padding: 1.2rem 1rem 1rem;
+    display: flex;
+    width: fit-content;
+    border-radius:4px;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 8px #bcbcbc8c;
+}
+
+.turnPic{
+    border-radius: 4px;
+    position: absolute;
+    top: -35px;
+    left: -32px;
+}
+.turnPic + img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+.picOneContainer p{
+    width: 75%;
+    border-top:5px solid #e7ecef;
+    margin-bottom: 12px;
+}
+.picOneContainer span{
+    width: 75px;
+    
+    border-top: 20px dotted #e7ecef;
+}
+.picTwoContainer {
+    position: relative;
+    top: -20px;
+    right: -200px;
+}
+.picTwoContainer .steeringPic + img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 12px;
+    
+}
+
+.steeringPic{
+    position: absolute;
+    top: -20px;
+    right: -40px;
+    border-radius: 4px;
+    
+}
+.phonePic{
+    position: absolute;
+    bottom: 75px;
+    left: -45px;
+    border-radius: 4px;
+    
+}
+
+.picTwoContainer p{
+    width: 75%;
+    border-top:5px solid #e7ecef;
+    margin-bottom: 12px;
+
+}
+.picTwoContainer span{
+    width: 50%;
+    border-top:5px solid #e7ecef;
+    margin-bottom: 12px;
+}

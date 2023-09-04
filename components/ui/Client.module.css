@@ -1,0 +1,58 @@
+@keyframes opac {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.clientContainer{
+height: 100vh;
+padding: 5rem 0;
+display: flex;
+transition: 2s opac ease-in-out;
+}
+
+.contentContainer{
+    padding: 5rem 7rem 5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clientName{
+    text-transform: capitalize;
+    font-size:19px;
+
+}
+
+.clientName::after{
+    content: '';
+    width: 10%;
+    height: 10%;
+    display: block;
+    border: 1px solid #344097;
+    border-radius: 50%;
+    border-color: #344097 transparent transparent;
+    position: relative;
+    top: 2px;
+}
+
+.tagline{
+  
+    font-size: 59px;
+    font-weight: 300;
+}
+.tags{
+    list-style-type: none;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.tag{
+    display: flex;
+    margin-right:1.5rem ;
+    font-weight: 300;
+}
