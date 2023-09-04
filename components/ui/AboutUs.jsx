@@ -10,7 +10,7 @@ export default function AboutUs() {
                 <button className='contactBtn'>Contact Us</button>
                 <svg height="200" width="300" >
               <g fill="none" stroke="black" stroke-width="4">
-                <circle stroke-dasharray="1,10"cx={'150'} cy={'100'}  r="77" />
+                <circle stroke-dasharray="1,10"cx={'150'} cy={'100'}  r="74" />
               </g>
             </svg>
             </div>
