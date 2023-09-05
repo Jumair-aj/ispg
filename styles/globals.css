@@ -14,10 +14,11 @@ body {
 .homeContainer {
   padding: 0 7rem;
   height: 100vh;
+  margin-inline: auto;
 }
 
 .contactDiv div{
-position: relative;
+  position: relative;
 }
 
 .contactBtn:hover ~ svg{
@@ -27,12 +28,12 @@ display: none;
 .contactBtn ~ svg{
   position: absolute;
   transition: 0.3s ease-in;
-z-index: -1;
+  z-index: -1;
 }
 .contactBtn {
   outline: none;
   border: none ;
-position: relative;
+  position: relative;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -48,10 +49,10 @@ position: relative;
 
 .aboutUsContainer h2{
   font-size: 43px;
-
+  
 }
 .aboutUsContainer h2 .underlinePart{
-
+  
   position: relative;
 }
 .aboutUsContainer h2 .underlinePart::after{
@@ -78,7 +79,7 @@ position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%) rotate(-280deg);
-
+  
   width: 160%;
   height: 130%;
   display: inline-block;
@@ -109,16 +110,33 @@ position: relative;
 .faqContainer .accordion-item  .accordion-body{
   font-size: 35px;
   font-weight: 200;
- color: #7f829c;
+  color: #7f829c;
   padding:  1rem;
 }
 
 .contactDiv h2{
- font-size: 70px;
- font-weight: 200;
-
+  font-size: 70px;
+  font-weight: 200;
+  
 }
 .contactDiv h2 span{
-color: #7f829c;
+  color: #7f829c;
+  
+}
 
+@media only screen and (max-width: 700px) {
+  .homeContainer {
+    padding: 0 2rem;
+    height: 100vh;
+    margin-inline: auto;
+  }
+  
+}
+@media only screen and (max-width: 400px) {
+  .homeContainer {
+    padding: 0 1rem;
+    height: 100vh;
+    margin-inline: auto;
+  }
+  
 }

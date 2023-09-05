@@ -9,9 +9,9 @@ export default function VideoSection() {
         <div className={styles.videoSectionContainer}>
             <div className={styles.videodiv}>
                 <img src="./images/videoPic.jpg" />
-                <div className={`col-md-3 col-6 ${styles.playBtn}`} onClick={() => setShow(true)}>
+                <div className={`col-lg-4 col-sm-9 ${styles.playBtn}`} onClick={() => setShow(true)}>
                     <div className="col-4"><AiFillPlayCircle size={100} color='#fff' /></div>
-                    <div className="col-8">See what Delmonte saying about us</div>
+                    <div className="col-8 d-sm-block d-none">See what Delmonte saying about us</div>
                 </div>
             </div>
             {show && <Video setShow={setShow} />}

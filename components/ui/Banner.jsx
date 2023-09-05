@@ -53,13 +53,13 @@ export default function Banner() {
   
   return (
     <div className={`row d-flex ${styles.bannerContainer}`}>
-      <div className="col-5">
+      <div className="col-md-5 col-12">
         <p className={styles.tagline}>WE MAKE IT  HAPPEN</p>
         <h1 className=''>Learn Driving. <span>The Digital Way.</span></h1>
         <p className={styles.projectsLink}>More Projects  <BsChevronDown className='ms-1' size={13} /></p>
       </div>
 
-      <div className={`col-7 ${styles.bannerImgContainer}`}>
+      <div className={`col-7 ${styles.bannerImgContainer} d-none d-md-block`} >
         <div className={styles.bgImg}></div>
         <div className={styles.picOneContainer} ref={ref}>
         <Image src="/images/turnPic.png" width="70" height="70" className={styles.turnPic} ref={ref2}/>

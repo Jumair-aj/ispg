@@ -8,13 +8,13 @@ export default function Header() {
     <div className={styles.headerContainer}>
       <div><Image src="/images/logo.png" width="300" height="70" className={styles.logo} /></div>
       <div className={styles.headerLink}>
-        <ul>
+        <ul className='d-none d-md-flex'>
           <li>Services</li>
           <li>Clients</li>
           <li>About Us</li>
           <li>Platforms</li>
         </ul>
-        <button>Let's Talk</button>
+        <button className='d-none d-md-block'>Let's Talk</button>
         <MdOutlineSort size={35} className={styles.icon}/>
       </div>
     </div>

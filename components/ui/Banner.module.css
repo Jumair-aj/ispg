@@ -9,7 +9,7 @@
 }
 
 .projectsLink{
-
+    
     /* border-bottom: 1px dashed #344097; */
     display: inline;
     margin-bottom: 2rem;
@@ -25,7 +25,7 @@
     height: 1px;
     top: 3px;
     position: relative;
-
+    
 }
 
 .bannerContainer h1{    
@@ -34,8 +34,8 @@
     margin-bottom: 6rem;
 }
 .bannerContainer span{    
-display: block;
-color: #7f829c;
+    display: block;
+    color: #7f829c;
 }
 
 .bannerImgContainer{
@@ -122,10 +122,18 @@ color: #7f829c;
     width: 75%;
     border-top:5px solid #e7ecef;
     margin-bottom: 12px;
-
+    
 }
 .picTwoContainer span{
     width: 50%;
     border-top:5px solid #e7ecef;
     margin-bottom: 12px;
 }
+
+@media only screen and (max-width: 700px) {
+  
+    .bannerContainer{
+        height: 650px;
+        padding: 3rem 0;
+    }
+  }

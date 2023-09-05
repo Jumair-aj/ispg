@@ -40,15 +40,15 @@ export default function Home() {
         <Faq />
         <VideoSection />
         <div className="row py-5 mb-5 contactDiv">
-          <div className="col-8">
+          <div className="col-12 col-sm-8">
             <h2 className="">
               Realize Your Digital Vision. <span>Let's Talk</span>
             </h2>
           </div>
-          <div className="col-4 px-5 d-flex justify-content-center align-items-center contactDiv2">
+          <div className="col-4 px-5 d-flex justify-content-center align-items-center contactDiv2 d-none d-sm-flex">
             <button className="contactBtn">Contact Us</button>
             <svg height="200" width="300" >
-              <g fill="none" stroke="black" stroke-width="4">
+              <g fill="none" stroke="black" strokeWidth="4">
                 <circle stroke-dasharray="1,10"cx={'150'} cy={'100'}  r="74" />
               </g>
             </svg>

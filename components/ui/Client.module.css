@@ -8,9 +8,9 @@
 }
 
 .clientContainer{
-height: 100vh;
+
 padding: 5rem 0;
-display: flex;
+
 transition: 2s opac ease-in-out;
 }
 
@@ -24,7 +24,7 @@ transition: 2s opac ease-in-out;
 .clientName{
     text-transform: capitalize;
     font-size:19px;
-
+    
 }
 
 .clientName::after{
@@ -40,7 +40,7 @@ transition: 2s opac ease-in-out;
 }
 
 .tagline{
-  
+    
     font-size: 59px;
     font-weight: 300;
 }
@@ -56,3 +56,19 @@ transition: 2s opac ease-in-out;
     margin-right:1.5rem ;
     font-weight: 300;
 }
+
+@media only screen and (max-width: 600px) {
+    .clientContainer{
+    
+    padding: 1rem 0;
+    
+    
+}
+.contentContainer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  }
